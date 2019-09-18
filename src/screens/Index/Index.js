@@ -1,5 +1,7 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import Content from '../../components/UI/Content/Content';
+import Button from '../../components/UI/Button/Button';
 
 // UI components
 import SideBar from '../../components/UI/NavBar/SideBar';
@@ -8,7 +10,11 @@ import Main from '../../components/UI/Main/Main';
 import LoginScreen from '../Auth/Login/Login';
 import ScreensTeamsSearch from '../Teams/Search/Search';
 
-const Pag01 = () => <div>01</div>;
+const Pag01 = () => (
+  <Content>
+    <Button danger sm>Opa</Button>
+  </Content>
+);
 const Pag02 = () => <div>02</div>;
 const Pag03 = () => <div>03</div>;
 
@@ -22,13 +28,13 @@ function Index(props) {
             <LoginScreen />
           </Route>
           <Route path="/pag01">
-            <Pag01/>
+            <Pag01 />
           </Route>
           <Route path="/pag02">
-            <Pag02/>
+            <Pag02 />
           </Route>
           <Route path="/pag03">
-            <Pag03/>
+            <Pag03 />
           </Route>
           <Route path="/">
             <ScreensTeamsSearch />

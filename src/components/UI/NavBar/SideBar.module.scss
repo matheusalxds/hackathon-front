@@ -6,7 +6,7 @@
   left: 0;
   width: $sidebar-width;
   height: 100vh;
-  background: $primary-color;
+  background: $color-primary;
 
   ul {
     li {
@@ -15,7 +15,8 @@
       position: relative;
 
       &:hover {
-        background: darken($primary-color, 10%);
+        transform: scale(1.05);
+        background: darken($color-primary, 10%);
       }
 
       a {

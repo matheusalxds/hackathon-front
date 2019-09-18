@@ -1,8 +1,18 @@
 $space-lg: 20px;
 $space-md: 14px;
 $space-sm: 8px;
-$space-xs: 2px;
 
 $sidebar-width: 140px;
 
-$primary-color: #61dafb;
+$color-primary: #61dafb;
+$color-danger: red;
+$color-success: green;
+$color-white: #ffffff;
+$color-black: rgba(0,0,0,0.87);
+
+$border-radius: 4px;
+
+$content-bg-color: $color-white;
+
+$box-shadow-default: 0px 0px 4px $color-black;
+$box-shadow-default-hover: 1px 1px 8px -1px $color-black;

@@ -1,0 +1,41 @@
+@import "../../../styles/variables";
+
+.button {
+  padding: 4px;
+  font-size: 1rem;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-default;
+  transition: all .1s linear;
+  border: none;
+  color: $color-white;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: $box-shadow-default-hover;
+  }
+
+  &--lg {
+    padding: $space-lg;
+  }
+
+  &--md {
+    padding: $space-md;
+  }
+
+  &--sm {
+    padding: $space-sm;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+  }
+
+  &--danger {
+    background-color: $color-danger;
+  }
+
+  &--success {
+    background-color: $color-success;
+  }
+
+}
