@@ -1,0 +1,32 @@
+@import "../../../styles/variables";
+
+.sideBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $sidebar-width;
+  height: 100vh;
+  background: $primary-color;
+
+  ul {
+    li {
+      transition: all .3s ease-in-out;
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        background: darken($primary-color, 10%);
+      }
+
+      a {
+        display: block;
+        padding: calc(#{$space-lg} * 2) 0 calc(#{$space-lg} * 2) $space-lg;
+        text-decoration: none;
+      }
+    }
+
+    li + li {
+      margin-top: $space-lg;
+    }
+  }
+}

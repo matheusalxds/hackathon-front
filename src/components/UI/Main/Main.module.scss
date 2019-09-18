@@ -1,0 +1,9 @@
+@import '../../../styles/variables';
+
+.main {
+  margin: 0 0 0 $sidebar-width;
+  padding: $space-lg;
+  background-color: lightgray;
+  width: calc(100% - #{$sidebar-width});
+  height: 100%;
+}
