@@ -12,8 +12,6 @@ function LoginForm(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log('login', login);
-    console.log('password', password);
     onSubmit(login, password);
   }
 
