@@ -7,7 +7,7 @@
   box-shadow: $box-shadow-default;
   transition: all .1s linear;
   border: none;
-  color: $color-white;
+  color: $color-text;
 
   &:hover {
     transform: scale(1.05);
@@ -28,6 +28,7 @@
 
   &--primary {
     background-color: $color-primary;
+    color: $color-white
   }
 
   &--danger {

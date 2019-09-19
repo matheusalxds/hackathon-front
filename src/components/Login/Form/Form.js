@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { TextInput, Button } from 'react-materialize';
+import Form from '../../UI/Form/Form';
+import Button from '../../UI/Button/Button';
+
+import TextField from '../../UI/Form/TextField';
+import ButtonFields from '../../UI/Form/ButtonFields';
 
 function LoginForm(props) {
   const { onSubmit } = props;
@@ -8,16 +12,20 @@ function LoginForm(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    console.log('login', login);
+    console.log('password', password);
     onSubmit(login, password);
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <TextInput label="Nome" onChange={(e) => setLogin(e.target.value)} />
-      <TextInput label="Senha" onChange={(e) => setPassword(e.target.value)} />
-      <Button type="button" small flat waves="red">Cancelar</Button>
-      <Button type="submit" small>Enviar</Button>
-    </form>
+    <Form onSubmit={handleSubmit}>
+      <TextField name="login" label="Login" value={login} onChange={(e) => setLogin(e.target.value)} />
+      <TextField name="password" label="Senha" value={password} onChange={(e) => setPassword(e.target.value)} />
+      <ButtonFields lg>
+        <Button type="button" sm>Cancelar</Button>
+        <Button type="submit" sm primary>Enviar</Button>
+      </ButtonFields>
+    </Form>
   );
 }
 

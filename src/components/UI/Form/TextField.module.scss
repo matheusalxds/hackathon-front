@@ -1,0 +1,39 @@
+@import "../../../styles/variables";
+$top-space: -15px;
+
+.textField {
+  position: relative;
+
+  & + .textField {
+    margin-top: $space-lg;
+  }
+
+  label:hover,
+  div:focus + label,
+  div:hover + label,
+  input:focus + label,
+  input:hover + label {
+    top: $top-space;
+    color: darken($color-primary, 10%);
+  }
+
+  &--active {
+    input + label {
+      top: $top-space;
+    }
+  }
+
+  input {
+    border-radius: $border-radius;
+    width: 100%;
+  }
+
+  label {
+    transition: all .15s linear;
+    font-size: .75rem;
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: $space-sm;
+  }
+}

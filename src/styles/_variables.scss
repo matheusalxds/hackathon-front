@@ -5,8 +5,8 @@ $space-sm: 8px;
 $sidebar-width: 140px;
 
 $color-primary: #61dafb;
-$color-danger: red;
-$color-success: green;
+$color-danger: #CC4747;
+$color-success: #01BF6A;
 $color-white: #ffffff;
 $color-black: rgba(0,0,0,0.87);
 
@@ -14,5 +14,13 @@ $border-radius: 4px;
 
 $content-bg-color: $color-white;
 
-$box-shadow-default: 0px 0px 4px $color-black;
-$box-shadow-default-hover: 1px 1px 8px -1px $color-black;
+$bg-color-1: #E3D8F1;
+$bg-color-2: #DABECA;
+$bg-color-3: #BF8B85;
+$bg-color-4: #AD8A64;
+$bg-color-5: #5D5F71;
+
+$box-shadow-default: 0px 0px 4px -1px $color-black;
+$box-shadow-default-hover: 1px 1px 6px -1px $color-black;
+
+$color-text: #212333;

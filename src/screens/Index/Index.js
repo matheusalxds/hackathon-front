@@ -19,21 +19,20 @@ const Pag02 = () => <div>02</div>;
 const Pag03 = () => <div>03</div>;
 
 function Index(props) {
-  return (
+  const logged = false;
+  return logged ? (
     <>
       <SideBar />
       <Main>
         <Switch>
-          <Route path="/login">
-            <LoginScreen />
-          </Route>
-          <Route path="/pag01">
+
+          <Route path="/pag01" exact>
             <Pag01 />
           </Route>
-          <Route path="/pag02">
+          <Route path="/pag02" exact>
             <Pag02 />
           </Route>
-          <Route path="/pag03">
+          <Route path="/pag03" exact>
             <Pag03 />
           </Route>
           <Route path="/">
@@ -46,6 +45,10 @@ function Index(props) {
         </Switch>
       </Main>
     </>
+  ) : (
+    <Route path="/login" exact>
+      <LoginScreen />
+    </Route>
   );
 }
 

@@ -1,0 +1,17 @@
+@import "../../../styles/variables";
+
+.btnFields {
+  display: flex;
+  justify-content: space-between;
+  &--lg {
+    margin-top: $space-lg;
+  }
+
+  &--md {
+    margin-top: $space-md;
+  }
+
+  &--sm {
+    margin-top: $space-sm;
+  }
+}
