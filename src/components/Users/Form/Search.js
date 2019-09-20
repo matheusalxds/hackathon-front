@@ -11,8 +11,18 @@ function Search(props) {
   const [email, setAddress] = useState('');
   return (
     <Form onSubmit={onSubmit}>
-      <TextField name="name" value={name} onChange={e => setName(e.target.value) }/>
-      <TextField name="email" value={email} onChange={e => setAddress(e.target.value) }/>
+      <TextField
+        name="name"
+        value={name}
+        onChange={e => setName(e.target.value)}
+        label="Nome"
+      />
+      <TextField
+        name="email"
+        value={email}
+        onChange={e => setAddress(e.target.value)}
+        label="Email"
+      />
 
       <ButtonFields lg>
         <Button primary type="submit" md>

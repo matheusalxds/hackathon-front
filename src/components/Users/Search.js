@@ -1,13 +1,14 @@
 import React from 'react';
 import SearchForm from './Form/Search';
 import List from './List/UserList';
+import Heading from '../UI/Heading/Heading';
 
 function Search(props) {
   return (
     <div>
-      <h2>
-        Usuarios
-      </h2>
+      <Heading two>
+        Usuários
+      </Heading>
       <SearchForm />
       <List />
     </div>
