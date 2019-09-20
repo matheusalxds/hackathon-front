@@ -9,6 +9,7 @@ import Main from '../../components/UI/Main/Main';
 
 import LoginScreen from '../Auth/Login/Login';
 import ScreensTeamsSearch from '../Teams/Search/Search';
+import ScreensUsersSearch from '../Users/Users';
 
 const Pag01 = () => (
   <Content>
@@ -16,24 +17,22 @@ const Pag01 = () => (
   </Content>
 );
 const Pag02 = () => <div>02</div>;
-const Pag03 = () => <div>03</div>;
 
 function Index(props) {
-  const logged = false;
+  const logged = true;
   return logged ? (
     <>
       <SideBar />
       <Main>
         <Switch>
-
           <Route path="/pag01" exact>
             <Pag01 />
           </Route>
           <Route path="/pag02" exact>
             <Pag02 />
           </Route>
-          <Route path="/pag03" exact>
-            <Pag03 />
+          <Route path="/usuarios">
+            <ScreensUsersSearch />
           </Route>
           <Route path="/">
             <ScreensTeamsSearch />

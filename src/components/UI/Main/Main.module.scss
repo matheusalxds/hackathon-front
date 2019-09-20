@@ -1,6 +1,7 @@
 @import '../../../styles/variables';
 
 .main {
+  display: inline-block;
   margin: 0 0 0 $sidebar-width;
   padding: $space-lg;
   background-color: lightgray;

@@ -1,0 +1,13 @@
+@import "../../../styles/variables";
+
+.heading {
+  margin: $space-lg 0;
+
+  &--1 {
+    font-size: 3rem
+  }
+
+  &--2 {
+    font-size: 2rem;
+  }
+}

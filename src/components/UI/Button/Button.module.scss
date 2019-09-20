@@ -8,6 +8,7 @@
   transition: all .1s linear;
   border: none;
   color: $color-text;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.05);
@@ -15,15 +16,15 @@
   }
 
   &--lg {
-    padding: $space-lg;
+    padding: $space-lg calc(#{$space-lg} * 2);
   }
 
   &--md {
-    padding: $space-md;
+    padding: $space-md calc(#{$space-md} * 2);;
   }
 
   &--sm {
-    padding: $space-sm;
+    padding: $space-sm calc(#{$space-sm} * 2);;
   }
 
   &--primary {

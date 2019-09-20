@@ -1,0 +1,40 @@
+@import "../../../styles/variables";
+
+.table {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  border: none;
+  text-align: left;
+
+  tr, td, th {
+    border: none;
+    font-size: .875rem;
+  }
+
+  th {
+    font-weight: 400;
+  }
+
+  td {
+    font-weight: 300;
+  }
+
+  tr th {
+    border-bottom: solid 1px $border-color;
+    padding: $space-lg;
+  }
+
+  tr td {
+    padding: $space-md $space-lg;
+
+    &:hover {
+      background-color: rgba($color-black, .1);
+    }
+
+  }
+
+  tr + tr {
+    border-top: solid 1px $border-color;
+  }
+}

@@ -9,18 +9,13 @@ function SideBar(props) {
       <nav>
         <ul>
           <li>
-            <Link to="pag01">
-              Lorem ipsum.
+            <Link to="/usuarios">
+              Usuários
             </Link>
           </li>
           <li>
             <Link to="pag02">
-              Lorem ipsum.
-            </Link>
-          </li>
-          <li>
-            <Link to="pag03">
-              Lorem ipsum.
+              Times
             </Link>
           </li>
         </ul>

@@ -20,6 +20,8 @@ $bg-color-3: #BF8B85;
 $bg-color-4: #AD8A64;
 $bg-color-5: #5D5F71;
 
+$border-color: lighten($bg-color-5, 35%);
+
 $box-shadow-default: 0px 0px 4px -1px $color-black;
 $box-shadow-default-hover: 1px 1px 6px -1px $color-black;
 
