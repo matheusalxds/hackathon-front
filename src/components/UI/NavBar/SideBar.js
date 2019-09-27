@@ -14,7 +14,7 @@ function SideBar(props) {
             </Link>
           </li>
           <li>
-            <Link to="pag02">
+            <Link to="/times">
               Times
             </Link>
           </li>

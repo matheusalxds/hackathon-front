@@ -1,5 +1,6 @@
 @import "../../../styles/variables";
-$top-space: -15px;
+
+$top-space: -5px;
 
 .textField {
   position: relative;
@@ -14,17 +15,11 @@ $top-space: -15px;
   input:focus + label,
   input:hover + label {
     top: $top-space;
-    color: darken($color-primary, 10%);
-  }
-
-  &--active {
-    input + label {
-      top: $top-space;
-    }
   }
 
   input {
     border-radius: $border-radius;
+    margin-top: 10px;
     width: 100%;
   }
 
@@ -33,7 +28,22 @@ $top-space: -15px;
     font-size: .75rem;
     content: '';
     position: absolute;
-    top: 15px;
+    top: 25px;
     left: $space-sm;
+  }
+
+  &--active {
+    input + label {
+      top: $top-space;
+    }
+  }
+
+  &__label,
+  &__input {
+    &--white {
+      label, input {
+        color: $color-white;
+      }
+    }
   }
 }

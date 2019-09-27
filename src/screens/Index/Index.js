@@ -19,7 +19,7 @@ const Pag01 = () => (
 const Pag02 = () => <div>02</div>;
 
 function Index(props) {
-  const logged = true;
+  const logged = false;
   return logged ? (
     <>
       <SideBar />

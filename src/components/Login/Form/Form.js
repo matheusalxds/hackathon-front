@@ -17,8 +17,22 @@ function LoginForm(props) {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <TextField name="login" label="Login" value={login} onChange={(e) => setLogin(e.target.value)} />
-      <TextField name="password" label="Senha" value={password} onChange={(e) => setPassword(e.target.value)} />
+      <TextField
+        name="login"
+        label="Login"
+        value={login}
+        onChange={(e) => setLogin(e.target.value)}
+        labelWhite
+        inputWhite
+      />
+      <TextField
+        name="password"
+        label="Senha"
+        labelWhite
+        inputWhite
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
       <ButtonFields lg>
         <Button type="button" sm>Cancelar</Button>
         <Button type="submit" sm primary>Enviar</Button>
