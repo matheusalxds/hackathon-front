@@ -10,12 +10,12 @@ function SideBar(props) {
         <ul>
           <li>
             <Link to="/usuarios">
-              Usuários
+              U
             </Link>
           </li>
           <li>
             <Link to="/times">
-              Times
+              T
             </Link>
           </li>
         </ul>

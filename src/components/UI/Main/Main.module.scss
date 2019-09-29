@@ -1,4 +1,5 @@
 @import '../../../styles/variables';
+@import '../../../styles/mixins';
 
 .main {
   display: inline-block;
@@ -7,4 +8,6 @@
   background-color: #FBFBFA;
   width: calc(100% - #{$sidebar-width});
   min-height: 100%;
+
+  animation: scaling .3s;
 }
